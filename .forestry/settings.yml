@@ -7,7 +7,6 @@ sections:
 - type: document
   path: test
   label: Test
-  match: "**/*"
 - type: heading
   label: Content
 - type: directory
@@ -33,4 +32,4 @@ build:
   preview_docker_image: node:12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: yarn develop
+  instant_preview_command: gridsome build
